@@ -1,0 +1,284 @@
+/*======================= FUENTES =========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Sawarabi+Mincho&display=swap');
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900*/
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.sawarabi-mincho-regular {
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*=======================         =========================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+/*======================= BODY =========================*/
+/*======================= NAV =========================*/
+header{
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    position: fixed;
+    border: 2px solid#fafafa10;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    
+nav{
+    display: flex;
+    gap: 1500px;
+   
+}
+}
+.container-icon img {
+    position: absolute;
+    height: 60px;
+    width: auto;
+    margin-left: 80px;
+    margin-top: 10px;
+    display: block;
+    transition: height 0.5s;
+}
+.container-icon img:hover{
+    height: 75px;
+    width: auto;
+    
+}
+.list-redes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.list-redes img{
+    height: 30px;
+    width: auto;
+    margin: 20px;
+    display: block;
+    
+}
+    /*========= TITULO =========*/
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+    padding-top: 3.5%;
+    transition: text-shadow 0.5s, color 0.5s;
+}
+
+h1:hover {
+    color: #f3dc9c;
+    text-shadow: 0 0 35px rgba(243, 208, 168, 0.5);
+}
+
+    
+
+    /*========= CAPITULOS =========*/
+
+.box_capitulo {
+    
+    /*border: 2px solid #cee284; */
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dibujo {
+   /* border: 2px solid #4CAF50; */
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    margin: auto;
+    width: 45%;
+    height: 790px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.sketchfab-embed-wrapper iframe {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.box_texto {
+    font-family: "Orbitron", sans-serif;
+    position: relative; 
+    height: 600px;
+    
+    margin: auto;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.5s, color 0.9s;
+}
+
+.box_texto:hover {
+    
+    box-shadow: 0 0 50px rgba(243, 208, 168, 0.5);
+}
+    /*========= boton =========*/
+
+.button-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+    background: linear-gradient(145deg, #ffcc00, #ff9900); 
+    color: #000;
+    border: 2px solid #ff9900;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+    
+.button-overlay:hover {
+    background: linear-gradient(145deg, #ff9900, #ffcc00); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.7); 
+}
+        /*========= TEXTOS =========*/
+
+
+.box_texto img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.back-text {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.text-img {
+    width: 100%;
+    height: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+ /*========== NARRATIVA ==========*/
+
+.narrativatxt{
+    margin: auto;
+    margin-left: 200px;
+}
+ .narrativa_botones {
+    
+    margin: auto;
+    width: 45%;
+    height: 790px;
+    
+    display: flex;
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center; 
+    align-items: left; 
+}
+
+.narrativa_botones button {
+    margin: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffcc00; /* Color del texto dorado */
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ffcc00; /* Borde dorado */
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+
+.narrativa_botones button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.2), transparent);
+    transition: width 0.3s, height 0.3s, left 0.3s;
+}
+
+.narrativa_botones button:hover::before {
+    width: 0%;
+    height: 0%;
+    left: 50%;
+}
+
+.narrativa_botones button:hover {
+    color: #ffd700; /* Color dorado brillante */
+    border-color: #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 50px rgba(255, 215, 0, 0.8);
+}
+
+.narrativa_botones button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.narrativa_botones button:hover::after {
+    transform: translateX(100%);
+}
+    
+
+
+
